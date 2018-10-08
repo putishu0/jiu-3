@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>酒</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script>
+        var pixelRatio = 1 / window.devicePixelRatio; //还原设备的真实分辨率；
+        //devicePixelRatio设备的像素比；
+        document.write('<meta name="viewport" content="width=device-width,initial-scale=' + pixelRatio + ',minimum-scale=' + pixelRatio + ',maximum-scale=' + pixelRatio + '" />');
+        var html = document.getElementsByTagName('html')[0];
+        var pageWidth = html.getBoundingClientRect().width;
+        html.style.fontSize = pageWidth / 10 + "px";
+    </script>
+</head>
+<body>
+    <img src="img/1.png" alt="">
+    <img src="img/2.png" alt="">
+    <img src="img/3.png" alt="">
+    <img src="img/4.png" alt="">
+    <section>
+        <span>货到付款</span>
+        <span>收到酒后有任何不满意可退货</span>
+    </section>
+    <div class="shouhou">
+        收到酒后有任何破损或质量问题可以联系我们进行补发或赔偿
+    </div>
+    <footer>
+        <img src="img/5.png" alt=""> &nbsp;
+        <span>咨询热线：<a>400-122-7213</a></span>
+    </footer>
+    <div class="fixed">
+        <pre>长按微信号复制: <span id="clone">  ryc1660  </span> </pre>
+     </div>
+</body>
+</html>
